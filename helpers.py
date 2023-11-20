@@ -27,6 +27,8 @@ def username_validate(username):
         if char not in allowed_chars:
             return 2
 
+    return 0
+
 
 def password_validate(password):
 

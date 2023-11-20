@@ -6,7 +6,7 @@
 
 <!-- This is the beginning of the heading -->
 <div class="container-7">
-    <h1 class="heading"><span id="heading">Your Contacts,</span><br>
+    <h1 class="heading" style="margin-bottom: 30px; margin-top: 15px;"><span id="heading">Your Contacts,</span><br>
         <span id="heading-rest"> seamlessly simplified with Cloud 
             <img  draggable="false" alt="cloud image" id="cloud-image" src="{{url_for('static', filename='/Image/cloud.jpeg')}}">
         </span>
@@ -14,10 +14,10 @@
 </div>
 
 <!-- This is the beginning of the logo image and the form -->
-<div class="container" id="login">
+<div class="container" id="login" style="margin-top: 0px;">
     <div class="row">
         <!-- Logo image -->
-        <div class="col-lg-4">
+        <div class="col-lg-4" style="display: flex; justify-content: center; align-items: center;">
             <img src="{{url_for('static', filename='/Image/logo.png')}}" draggable="false" class="img-fluid" alt="logo of the website" id="logo">
         </div>
 
@@ -28,12 +28,18 @@
                 <div class="mb-3">
                     <label for="username" class="form-label"><span id="username-placeholder">Username</span></label>
                     <input type="text" name="reg-username" class="form-control form-control-lg" id="username" placeholder="John_Harvard">
+                    <span id="passwordHelpInline" class="form-text">
+                      Must be 4-20 characters long. Allowed lowercase, uppercase letters and @._ symbols.
+                    </span>
                 </div>
 
                 <!-- Password -->
                 <div class="mb-3">
                     <label for="password" class="form-label"><span id="password-placeholder">Password</span></label>
                     <input type="password" name="reg-password" class="form-control form-control-lg" id="password">
+                    <span id="passwordHelpInline" class="form-text">
+                        Must be 8-30 characters long and include at least 1 lowercase, 1 uppercase letter and 1 symbol.
+                      </span>
                 </div>
 
                 <!-- Password Confirm-->
